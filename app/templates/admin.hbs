@@ -1,0 +1,6 @@
+<h2>This is Admin</h2>
+<ul>
+  {{#each model as |article|}}
+     {{admin-tile article=article destroyArticle="destroyArticle"}}
+  {{/each}}
+</ul>

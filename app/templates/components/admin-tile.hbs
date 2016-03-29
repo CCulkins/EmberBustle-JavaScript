@@ -1,0 +1,9 @@
+<li>{{article.author}} {{article.title}} {{article.category}} <img src={{article.image}}>
+  {{#if isTextShowing}}
+    <p> {{article.text}}</p>
+    <button {{action 'textHide'}}>Read Less</button>
+    {{else}}
+      <button {{action 'textShow'}}>Read More</button>
+    {{/if}}
+    <button {{action 'delete' article}}>Delete</button>
+</li>

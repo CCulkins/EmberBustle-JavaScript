@@ -4,7 +4,7 @@
 
 <ul>
   {{#each model as |article|}}
-     <li>{{article.author}} {{article.title}} {{article.category}} <img src={{article.image}}> </li>
+     {{article-tile article=article destroyArticle="destroyArticle"}}
   {{/each}}
 </ul>
 
